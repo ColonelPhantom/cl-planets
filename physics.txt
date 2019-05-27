@@ -1,0 +1,6 @@
+F = m * a
+a = F / m
+
+F_grav = G * m * M * r^-2
+
+a_grav = G * M * r^-2
