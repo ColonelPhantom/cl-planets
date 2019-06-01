@@ -49,6 +49,9 @@ impl Universe {
             let mut accel = Coord::new();
             let this = &self.content[i];
             for j in 0..self.content.len() {
+                if i == j {
+                    continue;
+                }
                 let other = &self.content[j];
                 let dx = other.pos.x - this.pos.x;
                 let dy = other.pos.y - this.pos.y;
